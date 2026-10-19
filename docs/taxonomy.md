@@ -1,4 +1,4 @@
-# Document taxonomy — draft v0.1
+# Document taxonomy — draft v0.2
 
 Status: initial design, not validated against a corpus. Updated October 19, 2026.
 
@@ -11,13 +11,13 @@ Assign one primary family and one subtype per document component. Store litigati
 | Family ID | Family | Initial subtypes |
 | --- | --- | --- |
 | PRE | Pre-litigation | demand_letter; preservation_notice; settlement_offer; agency_intake; agency_complaint; agency_response; right_to_sue_notice; agency_determination |
-| PLD | Pleadings | complaint; amended_complaint; answer; amended_answer; cross_complaint; answer_to_cross_complaint |
-| SVC | Service and notice | summons; proof_of_service; notice_of_acknowledgment_of_receipt; notice_of_entry; hearing_notice; deposition_notice; other_notice |
+| PLD | Pleadings | complaint; amended_complaint; answer; amended_answer; cross_complaint; answer_to_cross_complaint; demurrer |
+| SVC | Service and notice | summons; proof_of_service; notice_of_acknowledgment_of_receipt; notice_of_entry; hearing_notice; notice_of_motion; deposition_notice; other_notice |
 | ADM | Case administration | civil_case_cover_sheet; case_management_statement; scheduling_document; notice_of_related_case; substitution_of_attorney; dismissal_request; docket_entry |
 | DSC | Written discovery | form_interrogatories; special_interrogatories; requests_for_production; requests_for_admission; interrogatory_responses; production_responses; admission_responses; supplemental_responses; discovery_objections; privilege_log; meet_and_confer |
 | DEP | Testimony and subpoenas | deposition_transcript; deposition_errata; subpoena; subpoena_objection; deposition_exhibit_index |
 | EVD | Underlying evidence | employment_agreement; arbitration_agreement; personnel_record; policy_or_handbook; payroll_record; time_record; benefits_record; performance_record; disciplinary_record; termination_record; accommodation_record; leave_record; workplace_complaint; investigation_record; email; message; medical_record; photograph; audio; video; other_business_record |
-| MOT | Requests for court relief | motion; application; ex_parte_application; opposition; reply; memorandum_of_points_and_authorities; separate_statement; evidentiary_objections; request_for_judicial_notice; proposed_order |
+| MOT | Requests for court relief | motion; application; ex_parte_application; opposition; reply; memorandum_of_points_and_authorities; discovery_separate_statement; summary_judgment_separate_statement; other_separate_statement; evidentiary_objections; request_for_judicial_notice; proposed_order |
 | SUP | Supporting and procedural papers | declaration; affidavit; exhibit_cover; exhibit_index; stipulation; proposed_stipulation; certificate; other_supporting_paper |
 | CRT | Court-issued documents | order; minute_order; tentative_ruling; judgment; court_notice; hearing_transcript |
 | ADR | Settlement and alternative dispute resolution | mediation_brief; settlement_agreement; release; settlement_conference_statement; arbitration_demand; arbitration_response; arbitration_award |
@@ -39,13 +39,40 @@ These are candidate labels. A listed type may have no suitable public example. S
 ## Boundary rules
 
 1. Distinguish a civil complaint from an agency complaint by recipient and document function.
-2. Classify a demurrer under MOT.motion with motion_topic=demurrer; preserve the original title.
+2. Classify a California demurrer as PLD.demurrer; preserve the original title. Treat supporting memoranda and notices as separate components when boundaries are clear. CCP section 422.10 is the statutory reference to verify; see the source-review limits below.
 3. Distinguish a proposed order from an issued order using visible status evidence. Do not assume a signature means the court issued it.
 4. A notice of motion and its memorandum may require separate components. If reliable page boundaries cannot be identified, use UNK.mixed_unsegmented and request review.
 5. Evidence produced in discovery retains its underlying type; record discovery as the stage or context.
 6. Use other for an understood type missing from the vocabulary; use unknown when the type cannot be determined.
 7. Store form number separately from document type. Blank official forms are templates, not completed case documents.
 8. Never infer legal merit, timeliness, privilege, or truth from a classification label.
+
+## Current procedure and terminology references
+
+Reference review date: October 19, 2026. Use rules currently in effect, not the publication date of a proposal. A rule's older amendment date does not mean it is absent from the current edition.
+
+- [California Rules of Court, Title 3 — Civil Rules, 2026 edition](https://courts.ca.gov/cms/rules/index/three): primary procedural reference for the initial state-court scope.
+- [Rule 3.1112](https://courts.ca.gov/cms/rules/index/three/rule3_1112): supports distinguishing motion notices, motions, memoranda, and supporting papers, including combined filings.
+- [Rule 3.1345](https://courts.ca.gov/cms/rules/index/three/rule3_1345): basis for the discovery_separate_statement subtype; the rule includes exceptions, so classification does not establish that a statement was required.
+- [Rule 3.1350](https://courts.ca.gov/cms/rules/index/three/rule3_1350): basis for the summary_judgment_separate_statement subtype and distinction between moving and opposing papers. Preserve supporting/opposing role as metadata.
+- [California Code of Civil Procedure — official code index](https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=CCP): statutory reference. Priority sections for direct verification are 422.10 (pleadings), 437c (summary judgment/adjudication), and 2019.010 (discovery methods). The live statutory text could not be retrieved during this review; this draft does not certify a complete current-code audit.
+- [Federal Rules of Civil Procedure — current official edition](https://www.uscourts.gov/forms-rules/current-rules-practice-procedure/federal-rules-civil-procedure): the official page identifies 2025 as the latest amendment year. The [current rules notice](https://www.uscourts.gov/forms-rules/current-rules-practice-procedure) identifies amendments to Rules 16 and 26 and new Rule 16.1 effective December 1, 2025. These govern federal district-court procedure and do not replace California state procedure.
+- [Pending federal amendments](https://www.uscourts.gov/forms-rules/pending-rules-and-forms-amendments): consult separately; future-effective material is not the current baseline as of the review date.
+- [U.S. Courts Glossary of Legal Terms](https://www.uscourts.gov/glossary): terminology aid for the federal court system, not procedural authority or an exhaustive civil-document list.
+
+### Glossary crosswalk (project paraphrases)
+
+| Term | Classification implication |
+| --- | --- |
+| Affidavit | Oath-based written testimony; keep distinct from a declaration. |
+| Answer | Defense response to a civil complaint; PLD.answer. |
+| Brief | Argument paper; map by trial, appellate, or motion context. |
+| Pleadings | Party assertions; apply jurisdiction-specific categories. |
+| Petition | Request for judicial or official action; add a contextual subtype after review rather than assuming complaint. |
+| Record | Collection of case materials; distinguish container from component. |
+| Procedure | Rules of case conduct; source metadata, not a document label. |
+
+The crosswalk is selective. Criminal and bankruptcy glossary entries are outside the initial scope. Federal terminology must not silently override state terminology. This revision changes the earlier demurrer mapping and replaces the generic separate_statement label with contextual subtypes; any future annotations must record taxonomy_version=v0.2.
 
 ## Source anchors and coverage gaps
 
