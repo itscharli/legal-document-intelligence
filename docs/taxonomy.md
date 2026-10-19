@@ -47,6 +47,18 @@ These are candidate labels. A listed type may have no suitable public example. S
 7. Store form number separately from document type. Blank official forms are templates, not completed case documents.
 8. Never infer legal merit, timeliness, privilege, or truth from a classification label.
 
+## California authority and document compliance
+
+For California state-court material, use the applicable California Code of Civil Procedure (CCP) and California Rules of Court (CRC) provisions as the primary procedural references. Include CRC Title 2 (Trial Court Rules) as well as Title 3 (Civil Rules). Review permissible local rules and applicable case-specific orders; do not assume they can override statewide law or rules.
+
+[CRC rule 2.100](https://courts.ca.gov/cms/rules/index/two/rule2_100) governs the statewide form-and-format framework for papers presented for filing and restricts local form-and-format rules. See [Title 2](https://courts.ca.gov/cms/rules/index/two) for the relevant paper-format provisions.
+
+Applicability depends on the document and use: a filed motion, a discovery request served on a party, a blank Judicial Council form, and an underlying email exhibit do not share every requirement. Preserve original evidence rather than reformatting it as a pleading.
+
+Classification and compliance are separate tasks. A correct document-type label does not establish valid content, format, service, timing, or filing. The project does not yet implement a compliance checker.
+
+For future rule mappings, record: authority citation and URL, jurisdiction, applicable document type, requirement category, effective date, verification date, exceptions, and review status. A requirement remains unverified until its current authoritative text is checked. The U.S. Courts glossary supplies terminology only; federal civil rules apply to the federal-court extension.
+
 ## Current procedure and terminology references
 
 Reference review date: October 19, 2026. Use rules currently in effect, not the publication date of a proposal. A rule's older amendment date does not mean it is absent from the current edition.
