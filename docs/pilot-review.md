@@ -10,7 +10,7 @@ Reviewed October 19, 2026. This is a metadata-only, assistant-labeled pilot of f
 | TPL-004 | [CM-110 — Case Management Statement](https://selfhelp.courts.ca.gov/jcc-form/CM-110) | ADM.case_management_statement | pretrial | 2024-01-01 |
 | TPL-005 | [DISC-002 — Form Interrogatories—Employment Law](https://selfhelp.courts.ca.gov/jcc-form/DISC-002) | DSC.form_interrogatories | discovery | 2009-01-01 |
 
-See [machine-readable metadata](../data/pilot/templates.json). All classifications remain pending human review. Stage describes intended use, not an event in a real case. No subject-matter claim is inferred from the employment form.
+See [machine-readable metadata](../data/pilot/templates.json). The project owner accepted all five proposed classifications without changes on October 19, 2026. This records owner acceptance, not independent expert validation. Stage describes intended use, not an event in a real case. No subject-matter claim is inferred from the employment form.
 
 ## Procedural references and verification
 
@@ -32,9 +32,9 @@ The [official forms directory](https://selfhelp.courts.ca.gov/find-forms/all-by-
 - Records form version, provenance, and authority-verification status separately.
 - Tests only 3 of 14 taxonomy families. No coverage or accuracy percentage is warranted.
 
-## Human review task
+## Label review outcome
 
-For each row, confirm the family/subtype, intended-use stage, and short evidence note. Record reviewer identity/date and disagreements before changing review_status to accepted. In particular, decide whether pretrial is useful for CM-110 or whether a dedicated case_management stage is needed.
+Reviewer: project_owner. Date: October 19, 2026. Outcome: all five proposed classifications accepted without changes. The existing pretrial stage for CM-110 is retained. Each metadata record preserves its initial annotation and now records the owner label review. Source verification, redistribution, model-use review, and legal-compliance checks are separate and remain outstanding where noted.
 
 ## Next work
 
