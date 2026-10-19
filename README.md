@@ -1,6 +1,10 @@
 # Legal Document Intelligence
 
-**Status: In development — initial documentation drafts.** A draft taxonomy and annotation guidelines are available for review. They have not been validated against a document corpus. A five-form metadata pilot is available with labels accepted by the project owner; source checks remain pending. No case-document dataset, SQL implementation, or AI classifier is available yet.
+**Status: In development — initial documentation drafts.** A draft taxonomy and annotation guidelines are available for review. They have not been validated against a document corpus. A five-form metadata pilot is available with labels accepted by the project owner; source checks remain pending. A working SQLite catalog and command-line search cover the five template records. No case-document dataset or AI classifier is available yet.
+
+## Working prototype
+
+[Catalog demo and run instructions](docs/catalog-demo.md): search five official-form metadata records and run SQL queries for counts, discovery forms, and outstanding source checks.
 
 ## Current drafts
 
