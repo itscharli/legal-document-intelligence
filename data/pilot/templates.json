@@ -1,5 +1,5 @@
 {
-  "status": "draft_pending_human_review",
+  "status": "labels_accepted_by_project_owner_source_checks_pending",
   "source_type": "blank_templates_only",
   "records": [
     {
@@ -36,13 +36,20 @@
       "annotator_id": "assistant_initial_draft",
       "annotated_at": "2026-10-19",
       "confidence": "high",
-      "review_status": "pending",
+      "review_status": "accepted",
       "privacy_review": "approved",
       "privacy_review_scope": "Published metadata only; no completed forms or personal case material.",
       "redistribution_review": "pending",
       "model_use_review": "pending",
       "reuse_basis": "Official public form listing; no PDF redistribution or model-use permission determination.",
-      "ambiguity_note": null
+      "ambiguity_note": null,
+      "label_review": {
+        "reviewer_id": "project_owner",
+        "reviewed_at": "2026-10-19",
+        "outcome": "accepted_without_changes",
+        "basis": "Project owner accepted the five proposed classifications in conversation.",
+        "scope": "Proposed classification labels only; not independent expert validation or source/compliance approval."
+      }
     },
     {
       "document_id": "TPL-002",
@@ -78,13 +85,20 @@
       "annotator_id": "assistant_initial_draft",
       "annotated_at": "2026-10-19",
       "confidence": "high",
-      "review_status": "pending",
+      "review_status": "accepted",
       "privacy_review": "approved",
       "privacy_review_scope": "Published metadata only; no completed forms or personal case material.",
       "redistribution_review": "pending",
       "model_use_review": "pending",
       "reuse_basis": "Official public form listing; no PDF redistribution or model-use permission determination.",
-      "ambiguity_note": null
+      "ambiguity_note": null,
+      "label_review": {
+        "reviewer_id": "project_owner",
+        "reviewed_at": "2026-10-19",
+        "outcome": "accepted_without_changes",
+        "basis": "Project owner accepted the five proposed classifications in conversation.",
+        "scope": "Proposed classification labels only; not independent expert validation or source/compliance approval."
+      }
     },
     {
       "document_id": "TPL-003",
@@ -126,13 +140,20 @@
       "annotator_id": "assistant_initial_draft",
       "annotated_at": "2026-10-19",
       "confidence": "high",
-      "review_status": "pending",
+      "review_status": "accepted",
       "privacy_review": "approved",
       "privacy_review_scope": "Published metadata only; no completed forms or personal case material.",
       "redistribution_review": "pending",
       "model_use_review": "pending",
       "reuse_basis": "Official public form listing; no PDF redistribution or model-use permission determination.",
-      "ambiguity_note": null
+      "ambiguity_note": null,
+      "label_review": {
+        "reviewer_id": "project_owner",
+        "reviewed_at": "2026-10-19",
+        "outcome": "accepted_without_changes",
+        "basis": "Project owner accepted the five proposed classifications in conversation.",
+        "scope": "Proposed classification labels only; not independent expert validation or source/compliance approval."
+      }
     },
     {
       "document_id": "TPL-004",
@@ -168,13 +189,20 @@
       "annotator_id": "assistant_initial_draft",
       "annotated_at": "2026-10-19",
       "confidence": "high",
-      "review_status": "pending",
+      "review_status": "accepted",
       "privacy_review": "approved",
       "privacy_review_scope": "Published metadata only; no completed forms or personal case material.",
       "redistribution_review": "pending",
       "model_use_review": "pending",
       "reuse_basis": "Official public form listing; no PDF redistribution or model-use permission determination.",
-      "ambiguity_note": "Pretrial is a broad intended-use stage; case management can overlap discovery."
+      "ambiguity_note": "Pretrial is a broad intended-use stage; case management can overlap discovery.",
+      "label_review": {
+        "reviewer_id": "project_owner",
+        "reviewed_at": "2026-10-19",
+        "outcome": "accepted_without_changes",
+        "basis": "Project owner accepted the five proposed classifications in conversation.",
+        "scope": "Proposed classification labels only; not independent expert validation or source/compliance approval."
+      }
     },
     {
       "document_id": "TPL-005",
@@ -210,13 +238,20 @@
       "annotator_id": "assistant_initial_draft",
       "annotated_at": "2026-10-19",
       "confidence": "high",
-      "review_status": "pending",
+      "review_status": "accepted",
       "privacy_review": "approved",
       "privacy_review_scope": "Published metadata only; no completed forms or personal case material.",
       "redistribution_review": "pending",
       "model_use_review": "pending",
       "reuse_basis": "Official public form listing; no PDF redistribution or model-use permission determination.",
-      "ambiguity_note": null
+      "ambiguity_note": null,
+      "label_review": {
+        "reviewer_id": "project_owner",
+        "reviewed_at": "2026-10-19",
+        "outcome": "accepted_without_changes",
+        "basis": "Project owner accepted the five proposed classifications in conversation.",
+        "scope": "Proposed classification labels only; not independent expert validation or source/compliance approval."
+      }
     }
   ]
 }
