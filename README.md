@@ -1,6 +1,13 @@
 # Legal Document Intelligence
 
-**Status: In development — planning stage.** This repository currently documents the project scope. The taxonomy, annotated dataset, SQL analysis, and AI classifier are planned; none is complete.
+**Status: In development — initial documentation drafts.** A draft taxonomy and annotation guidelines are available for review. They have not been validated against a document corpus. No annotated dataset, SQL implementation, or AI classifier is available yet.
+
+## Current drafts
+
+- [Document taxonomy v0.1](docs/taxonomy.md): candidate families, subtypes, contextual attributes, and boundary rules.
+- [Annotation guidelines v0.1](docs/annotation-guidelines.md): source screening, metadata fields, labeling procedure, and proposed pilot checks.
+
+Next milestone: review the vocabulary and assemble a small, screened public-source metadata pilot.
 
 A portfolio project exploring how documents in California employment litigation can be organized, annotated, and analyzed to support legal operations.
 
