@@ -4,7 +4,7 @@
 
 ## Current drafts
 
-- [Document taxonomy v0.1](docs/taxonomy.md): candidate families, subtypes, contextual attributes, and boundary rules.
+- [Document taxonomy v0.2](docs/taxonomy.md): candidate families, subtypes, contextual attributes, boundary rules, and dated references to current civil rules and the U.S. Courts glossary.
 - [Annotation guidelines v0.1](docs/annotation-guidelines.md): source screening, metadata fields, labeling procedure, and proposed pilot checks.
 
 Next milestone: review the vocabulary and assemble a small, screened public-source metadata pilot.
