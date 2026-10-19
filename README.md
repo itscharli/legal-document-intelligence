@@ -1,15 +1,15 @@
 # Legal Document Intelligence
 
-**Status: In development — initial documentation drafts.** A draft taxonomy and annotation guidelines are available for review. They have not been validated against a document corpus. A five-form metadata pilot is available with provisional labels pending human review. No case-document dataset, SQL implementation, or AI classifier is available yet.
+**Status: In development — initial documentation drafts.** A draft taxonomy and annotation guidelines are available for review. They have not been validated against a document corpus. A five-form metadata pilot is available with labels accepted by the project owner; source checks remain pending. No case-document dataset, SQL implementation, or AI classifier is available yet.
 
 ## Current drafts
 
 - [Document taxonomy v0.2](docs/taxonomy.md): candidate families, subtypes, contextual attributes, boundary rules, and dated references to current civil rules and the U.S. Courts glossary.
 - [Annotation guidelines v0.1](docs/annotation-guidelines.md): source screening, metadata fields, labeling procedure, and proposed pilot checks.
 
-- [Five-form pilot review](docs/pilot-review.md) and [metadata](data/pilot/templates.json): official blank forms with provisional classifications and explicit authority-verification states.
+- [Five-form pilot review](docs/pilot-review.md) and [metadata](data/pilot/templates.json): official blank forms with owner-accepted classifications and explicit authority-verification states.
 
-Next milestone: human review of the pilot labels and completion of outstanding statutory and PDF checks.
+Next milestone: completion of outstanding statutory and PDF checks.
 
 A portfolio project exploring how documents in California employment litigation can be organized, annotated, and analyzed to support legal operations.
 
