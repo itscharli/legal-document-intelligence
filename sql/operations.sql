@@ -1,6 +1,7 @@
 -- Counts describe only this five-template sample, not litigation workload.
-SELECT family, COUNT(*) AS template_count
-FROM documents GROUP BY family ORDER BY template_count DESC, family;
+SELECT form_number, title, family, subtype
+FROM documents
+ORDER BY form_number;
 
 -- Discovery templates.
 SELECT form_number, title, source_url FROM documents
@@ -15,3 +16,4 @@ ORDER BY d.form_number, a.reference_number;
 -- Label acceptance is separate from model-use and redistribution review.
 SELECT form_number, label_review_status, redistribution_review, model_use_review
 FROM documents ORDER BY form_number;
+
